@@ -74,6 +74,7 @@ a {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 100;
 }
 .top-nav header {
   display: flex;
@@ -203,6 +204,12 @@ input:valid {
   display: flex;
   margin-left: auto;
 }
+.hv:hover i {
+  color: var(--BRAND_BLUE);
+}
+.container i:hover {
+  color: var(--BRAND_BLUE);
+}
 .action-card {
   display: flex;
   align-items: center;
@@ -234,6 +241,227 @@ input:valid {
   font-weight: 500;
 }
 .playlist {
-  color: var(--TEXT_COLOR_L3);
+  color: var(--TEXT_COLOR_L0);
+  font-weight: 700;
 }
 /* Hero Section End */
+
+/* Category Section Start */
+.category-1 {
+  margin: 4rem 2.5rem;
+}
+.category-1 h3 {
+  margin: 2rem 0;
+  color: var(--TEXT_COLOR_L0);
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  column-gap: 1rem;
+  row-gap: 2rem;
+}
+.card {
+  height: 150px;
+  border-radius: 10px;
+  position: relative;
+  transition: all 500ms;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 10px;
+  background-size: cover;
+  background-position: center;
+}
+.card-content {
+  position: absolute;
+  bottom: 0;
+  transition: all 1s;
+  color: var(--TEXT_COLOR_L0);
+}
+.opacity {
+  opacity: 0;
+}
+.card:hover .opacity {
+  opacity: 1;
+}
+.card:hover {
+  transform: scale(1.08);
+}
+
+.card:hover .card-content {
+  transform: translateY(-34%);
+}
+.card1 {
+  background: linear-gradient(
+      to bottom,
+      rgba(105, 105, 105, 0.1),
+      rgba(105, 105, 105, 1)
+    ),
+    url("../images/sp-1.webp");
+  background-size: cover;
+  background-position: center;
+}
+.card2 {
+  background: linear-gradient(
+      to bottom,
+      rgba(105, 105, 105, 0.1),
+      rgba(105, 105, 105, 1)
+    ),
+    url("https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/220/1050220-h-e9f694504901");
+  background-size: cover;
+  background-position: center;
+}
+.card3 {
+  background: linear-gradient(
+      to bottom,
+      rgba(105, 105, 105, 0.1),
+      rgba(105, 105, 105, 1)
+    ),
+    url("https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/297/1050297-h-9c67d7017d86");
+  background-size: cover;
+  background-position: center;
+}
+.card4 {
+  background: linear-gradient(
+      to bottom,
+      rgba(105, 105, 105, 0.1),
+      rgba(105, 105, 105, 1)
+    ),
+    url("https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/211/1050211-h-61b2155f5f7b");
+  background-size: cover;
+  background-position: center;
+}
+.d1 {
+  background: linear-gradient(
+      to bottom,
+      rgba(105, 105, 105, 0.1),
+      rgba(105, 105, 105, 1)
+    ),
+    url("../images/d-1.webp");
+  background-size: cover;
+  background-position: center;
+}
+.d2 {
+  background: linear-gradient(
+      to bottom,
+      rgba(105, 105, 105, 0.1),
+      rgba(105, 105, 105, 1)
+    ),
+    url("../images/d-2.webp");
+  background-size: cover;
+  background-position: center;
+}
+.d3 {
+  background: linear-gradient(
+      to bottom,
+      rgba(105, 105, 105, 0.1),
+      rgba(105, 105, 105, 1)
+    ),
+    url("../images/d-3.webp");
+  background-size: cover;
+  background-position: center;
+}
+.d4 {
+  background: linear-gradient(
+      to bottom,
+      rgba(105, 105, 105, 0.1),
+      rgba(105, 105, 105, 1)
+    ),
+    url("../images/d-4.webp");
+  background-size: cover;
+  background-position: center;
+}
+.d5 {
+  background: linear-gradient(
+      to bottom,
+      rgba(105, 105, 105, 0.1),
+      rgba(105, 105, 105, 1)
+    ),
+    url("../images/d-5.webp");
+  background-size: cover;
+  background-position: center;
+}
+.d6 {
+  background: linear-gradient(
+      to bottom,
+      rgba(105, 105, 105, 0.1),
+      rgba(105, 105, 105, 1)
+    ),
+    url("../images/d-6.webp");
+  background-size: cover;
+  background-position: center;
+}
+.d7 {
+  background: linear-gradient(
+      to bottom,
+      rgba(105, 105, 105, 0.1),
+      rgba(105, 105, 105, 1)
+    ),
+    url("../images/d-7.webp");
+  background-size: cover;
+  background-position: center;
+}
+.playlist {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 0.8rem;
+}
+.adv .card {
+  height: 250px;
+}
+.adv .card-container {
+  grid-template-columns: repeat(auto-fit, 180px);
+  column-gap: 1.5rem;
+}
+/* Category Section End */
+/* Footer Links Start*/
+footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 0 2rem;
+  margin-bottom: 3rem;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+.nav-items {
+  display: flex;
+  gap: 1rem;
+}
+.nav-items a {
+  color: var(--TEXT_COLOR_L3);
+}
+.nav-items a:hover {
+  color: var(--BRAND_BLUE);
+}
+.store,
+.social-icon {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.store i,
+.social-icon i {
+  font-size: 2rem;
+  color: var(--BG_COLOR_L3);
+  color: var(--TEXT_COLOR_L4);
+}
+.store i:hover,
+.social-icon i:hover {
+  color: #1f80e0;
+}
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  color: var(--TEXT_COLOR_L4);
+}
+.copyright {
+  font-size: 12px;
+  color: var(--TEXT_COLOR_L2);
+  margin-top: 1rem;
+}
+/* Footer Links End */
